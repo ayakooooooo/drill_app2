@@ -1,5 +1,8 @@
 <h1>新規投稿ページ</h1>
 <%= form_with url: "/posts", method: :post, local: true do |form| %>
+  <%# form_with url: '【送信するパス】', method: :【HTTPメソッド】, local: true do |form| %>
   <%= form.text_field :content %>
+  <%# contentを入力する１行のテキストボックス%>
   <%= form.submit '投稿する' %>
+  <%# 投稿すると書かれた送信ボタン%>
 <% end %>
